@@ -43,4 +43,6 @@ If you don't already have python installed:
 * **For windows**, run "**for_windows_users.bat**"
 * **For MacOS/Linux**, run "**for_macos_linux_users.sh**"
 
+If some of the .bat/.sh files don't work, install python 3.11.4 manually using this link: https://www.python.org/downloads/release/python-3114/
+
 Thanks for using GDLR!
