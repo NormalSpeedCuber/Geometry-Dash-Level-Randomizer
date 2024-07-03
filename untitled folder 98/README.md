@@ -38,6 +38,8 @@ This would lead you to "The Nightmare" since it is the (1)st level on the (1)st 
 
 ## IMPORTANT
 
+This project requires **python 3.11.4, flask, and random module.**
+
 If you don't already have python installed:
 
 * **For windows**, run "**for_windows_users.bat**"
