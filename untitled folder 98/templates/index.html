@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geometry Dash Level Randomizer</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function randomizeLevel() {
+            $.ajax({
+                url: '/randomize',
+                type: 'GET',
+                success: function(data) {
+                    document.getElementById('difficulty').innerText = "Difficulty: " + data.difficulty;
+                    document.getElementById('page').innerText = "Page: " + data.page;
+                    document.getElementById('number').innerText = "Number: " + data.number;
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Geometry Dash Level Randomizer</h1>
+    <p id="difficulty">Difficulty: </p>
+    <p id="page">Page: </p>
+    <p id="number">Number: </p>
+    <button onclick="randomizeLevel()">Randomize Again</button>
+</body>
+</html>
